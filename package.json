@@ -1,0 +1,23 @@
+{
+  "name": "any2rem",
+  "version": "1.0.1",
+  "description": "A unit conversion tool for universal units to rem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "any2rem": "any2rem.js"
+  },
+  "author": "junbindeng",
+  "keywords": [
+    "rem",
+    "rpx2rem",
+    "rem2rpx",
+    "px2rem"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.0.0"
+  }
+}
