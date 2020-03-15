@@ -1,13 +1,5 @@
 language: node_js
 node_js:
-  - "4"
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
+  - 8
 script: "npm test && npm run cover"
 after_script: "node node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
