@@ -1,15 +1,21 @@
 {
   "name": "any2rem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A unit conversion tool for universal units to rem.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "cover": "node node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
   },
   "bin": {
-    "any2rem": "any2rem.js"
+    "any2rem": "./bin/any2rem.js"
   },
   "author": "junbindeng",
+  "homepage": "https://github.com/JunbinDeng/any2rem",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JunbinDeng/any2rem.git"
+  },
   "keywords": [
     "rem",
     "rpx2rem",
@@ -19,5 +25,11 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^5.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.0",
+    "mocha-lcov-reporter": "^1.3.0"
   }
 }

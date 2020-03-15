@@ -1,0 +1,151 @@
+@import 'common/style/common-util.scss';
+
+.container {
+	width: 750rpx;
+	margin: 0 auto;
+	position: relative;
+	background: #ffffff;
+	height: 100vh;
+	overflow:hidden;
+	.search-wrap{
+		padding:16rpx 20rpx 24rpx;
+		.search{
+			border: 1rpx solid rgba(0,0,0,0.08);
+			box-shadow: 0 3rpx 15rpx 0 rgba(0,0,0,0.05);
+			border-radius: 12rpx;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			height:88rpx;
+			span{
+				padding-left:42rpx;
+				background:{
+					image:url(https://via.placeholder.com/300.png/09f/fff.png);
+					repeat:no-repeat;
+					size:27.8rpx;
+					position:left center;
+				}
+				font-size: 28rpx;
+				color: rgba(0,0,0,0.45);
+			}
+		}
+	}
+	.common-disease{
+		position:relative;
+		overflow:hidden;
+		.common-list{
+			padding:16rpx $block-pd 28rpx 208rpx;
+			margin-bottom:-12rpx;
+			white-space: nowrap;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			font-size:0;
+			list-style:none;
+			-webkit-overflow-scrolling: touch;
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+				-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+				background: rgba(0, 0, 0, 0);
+				opacity: 0;
+				display: none;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-radius: 0;
+				-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+				background: rgba(0, 0, 0, 0);
+				opacity: 0;
+				display: none;
+			}
+			li{
+				display:inline-block;
+				width:152rpx;
+				background: rgba(0,0,0,0.04);
+				border-radius: 8rpx;
+				text-align:center;
+				font-size: 28rpx;
+				color: rgba(0,0,0,0.85);
+				line-height:64rpx;
+				position:relative;
+				box-sizing:border-box;
+				padding:0 10rpx;
+				&:not(:last-child){
+					margin-right:16rpx;
+				}
+			}
+		}
+		.common-title{
+			position:absolute;
+			left:0;
+			top:0;
+			line-height:96rpx;
+			width:208rpx;
+			box-sizing:border-box;
+			background-image: linear-gradient(90deg, #FFFFFF 87%, rgba(255,255,255,0.00) 100%);
+			padding-left:40rpx;
+			font-size: 28rpx;
+			color: rgba(0,0,0,0.45);
+			z-index:1;
+		}
+	}
+	.disease-wrap{
+		margin-top:24rpx;
+		position:relative;
+		border-top:1rpx solid rgba(0,0,0,0.08);
+		// &:before{
+		// 	@include setTopLine(rgba(0,0,0,0.08));
+		// 	z-index:1;
+		// 	top:-1rpx;
+		// }
+		display:flex;
+		.scroll-wrap{
+			height:calc(100vh - 248rpx);
+		}
+		.left-wrap{
+			width:192rpx;
+			background: #F7FAFA;
+		}
+		.right-wrap{
+			flex:1;
+		}
+		.symptom-tab{
+			.symptom-item{
+				line-height:40rpx;
+				padding:40rpx 32rpx 40rpx 40rpx;
+				font-size: 28rpx;
+				color: rgba(0,0,0,0.85);
+				position:relative;
+				word-break:break-all;
+				&.active{
+					background: #FFFFFF;
+					color: #02B9CC;
+					font-weight:$font-medium;
+				}
+			}
+		}
+		.disease-list{
+			.disease-item{
+				position:relative;
+				&:not(:last-child):after{
+					@include setBottomLine(rgba(0,0,0,0.08),40rpx,40rpx);
+				}
+				.name{
+					padding-left:40rpx;
+					padding-right:182rpx;
+					font-size: 28rpx;
+					line-height:128rpx;
+					color: rgba(0,0,0,0.85);
+				}
+				.focus-common-btn{
+					position:absolute;
+					right:40rpx;
+					top:50%;
+					margin-top:-32rpx;
+					z-index:1;
+				}
+			}
+		}
+	}
+}
+

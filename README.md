@@ -3,9 +3,18 @@
 According to one stylesheet, generate rem or other units version stylesheet.
 
 [![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![Downloads][downloads-image]][downloads-url]
 
 [npm-image]: https://img.shields.io/npm/v/any2rem.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/any2rem
+[travis-image]: https://img.shields.io/travis/JunbinDeng/any2rem.svg?style=flat-square
+[travis-url]: https://travis-ci.org/JunbinDeng/any2rem
+[coveralls-image]: https://img.shields.io/coveralls/JunbinDeng/any2rem.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/JunbinDeng/any2rem
+[downloads-image]: http://img.shields.io/npm/dm/any2rem.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/any2rem
 
 ## Usage
 
